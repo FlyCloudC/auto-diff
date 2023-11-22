@@ -1,0 +1,9 @@
+ocamlc -c prim.mli
+ocamlc -c prim.ml
+ocamlc -c expr.mli
+ocamlc -c expr.ml
+ocamlc -c inst.mli
+ocamlc -c inst.ml
+ocamlc -c diff.mli
+ocamlc -c diff.ml
+utop prim.cmo expr.cmo inst.cmo diff.cmo -init test.ml
